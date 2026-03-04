@@ -20,3 +20,13 @@ dice_calculator = ProbabilityCalculator(
 
 dice_calculator.Generate(samples_amount)
 dice_calculator.Print()
+
+# --- --- --- --- --- ---
+
+try:
+    error_calculator = ProbabilityCalculator(
+        ["Small", "List"],
+        [str(index) for index in range(1, 7)]
+    )
+except Exception as error:
+    print(error)

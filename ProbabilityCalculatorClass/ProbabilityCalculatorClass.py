@@ -5,6 +5,10 @@ __all__ = ["ProbabilityCalculator"]
 class ProbabilityCalculator:
 
     def __init__(self, options: list[str], weights: list[float] | None = None):
+
+        if ( weights is not None ) and ( len(options) != len(weights) ):
+            raise ValueError("Length of options and weights must match.")
+
         self.data = {}
         self.have_results_been_generated = False
 
