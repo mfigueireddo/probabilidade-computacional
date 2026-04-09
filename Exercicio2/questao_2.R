@@ -1,3 +1,6 @@
+# NÃO TERMINEI DE FAZER.
+# FALTA D, E, F
+
 set.seed(123)
 
 rodadas <- 10000

@@ -84,7 +84,7 @@ cat("=== === === === === ===\n\n")
 
 LM <- function(n){
   soma <- 0
-  maior_num <- 2^5 - 1
+  maior_num <- 2^n - 1
   
   for (n_atual in 1:n){
     sorteio <- round(runif(1, min=0, max=1))
