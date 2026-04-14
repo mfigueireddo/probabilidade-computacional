@@ -1,0 +1,131 @@
+1. 
+Rio -> São Paulo -> Rio
+Trem, ônibus ou avião
+Não repetir transporte na ida e na volta
+
+1 ->: 3
+2 ->: 2
+= 6 opções
+
+2.
+_ _ _ _
+< 5.000
+% 5 == 0
+Algarismos 2, 3, 4 e 5
+
+1 _: len(4, 3, 2) = 3
+2 _: len(5, 4, 3, 2) = 4
+3 _: len(5, 4, 3, 2) = 4
+4 _: len(5) = 1
+Total: 3 * 4 * 4 * 1 = 48
+
+3. 
+_ _ _
+Pares
+3 algarismos distintos
+
+Caso 1 --> 3_ == 0
+3 _: 1
+2 _: len(1, 2, 3, 4, 5, 6, 7, 8, 9) = 9
+1 _: len(1, 2, 3, 4, 5, 6, 7, 8, 9) - 1 (evita repetição de 2_) = 8
+Total: 1 * 9 * 8 = 72
+
+Caso 2 --> 3_ != 0
+3 _: len(2, 4, 6, 8) = 4
+2 _: len(0, 1, 2, 3, 4, 5, 6, 7, 8, 9) - 2 [evita repetição de 1_(por causa do número != 0) e 3_ (por causa do 0)]= 8
+1 _: len(1, 2, 3, 4, 5, 6, 7, 8, 9) - 2 [evita repetição de 2_ (por causa do número != 0) e 3_ (por causa do 0)] = 8
+Total: 4 * 8 * 8 = 256
+
+Total: 72 + 256 = 328
+
+4.
+5 rapazes
+5 moças
+5 bancos de 2 lugares
+Cada banco 1 rapaz e 1 moça
+
+_ _ | _ _ | _ _ | _ _ | _ _
+
+Se for contar que não importam QUEM são as pessoa e somente o sexo importa: 1 possibilidade
+
+Se não for contar...
+
+Banco 1
+_: 5
+_: 5
+
+Banco 2
+_: 4
+_: 4
+
+Banco 3
+_: 3
+_: 3
+
+Banco 4
+_: 2
+_: 2
+
+Banco 5
+_: 1
+_: 1
+
+Total: 5*5 * 4*4 * 3*3 * 2*2 * 1*1 = ???
+
+5. 
+_ _ _ _ _
+5 crianças
+
+1 _: 5
+2 _: 4
+3 _: 3
+4 _: 2
+5 _: 1
+
+Total: 5 * 4 * 3 * 2 * 1 = 120
+
+/ 5 = 24 
+Isso porque a ordem em que as crianças sentam não importa: fila NÃO tem começo, nem fim
+
+6. 
+João: 2/3 -> 8/12
+Maria: 3/4 -> 9/12
+
+Só poderia somar 2/3 + 3/4 se eles fossem mutuamente exclusivos
+Se os 2 não podem resolver ao mesmo tempo
+
+Chance de não resolverem
+João: 1 - 2/3 = 1/3
+Maria: 1 - 3/4 = 1/4
+João * Maria = 1/12 (multiplicação = OU)
+
+Então, a chance de resolverem: 1 - 1/12 = 11/12
+
+Dá pra fazer também com
+P(J union M) = P(J) + P(M) - P(J intersect M)
+Sendo que
+P(J intersect M) = P(J) * P(M)
+
+7. 
+6 bolas
+3 urnas
+Todas urnas com pelo menos uma bola
+
+Tem que contar que não é só atribuir uma bola à um cenário
+Essa bola pode ser outras 5 bolas também!
+
+Cada bola pode ir pra 3 urnas: 3^6 = 729
+
+Contrário de "todas as urnas com pelo menos uma bola": "pelo menos uma urna vazia"
+
+1 irna vazia e distribui a bola nas outras 2: 3 * 2^6 = 192
+2 urnas vazia e distribui a bola para 1: 3 * 1^7 = 3
+
+Corrigindo sobrecontagem
+192 - 3 = 189
+
+Casos favoráveis
+729 - 189 = 540
+
+Probabilidade
+540/729 = 20/27
