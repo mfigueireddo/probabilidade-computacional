@@ -183,6 +183,7 @@ Resposta: 5! / (5-3)! * (5 * (5 - 3))! = 5! / 2! * (5 * 2)! = 5! / 2! * 10! = ..
 
 **Combinação Completa (com repetição)**
 Pode repetir elementos, mas ordem não importa
+Combinação Simples mas, ao invés de escolher n, escolhe n + p - 1
 ```
 C = (n + p - 1)! / p! * ((n + p - 1) - p)!
 ```
@@ -199,3 +200,26 @@ P(A) = { vazio, {x}, {y}, {x, y} }
 ```
 número de subconjuntos = 2^n
 n = número de elementos do conjunto
+
+---
+
+### Probabilidade
+
+**Arranjo com repetição**
+```
+AP = n^p
+```
+
+#### Tipos de Amostragem
+
+1. Sem reposição e com ordem
+Arranjo ou Permutação
+
+2. Sem reposição e sem ordem
+Combinação
+
+3. Com reposição e com ordem
+Arranjo com repetição ou Permutação com reposição
+
+4. Com reposição e sem ordem
+Combinação completa (Combinação com repetição)
