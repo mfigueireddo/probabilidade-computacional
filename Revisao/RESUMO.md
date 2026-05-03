@@ -78,6 +78,20 @@ abs()
 **LCG**
 [Aqui](gerador_lcg.R)
 
+Para pegar os elementos da matriz
+```
+matriz[seq(1, tamanhoAmostra, 3)]
+```
+
+**Pacman**
+[Aqui](../Exercicio1/questao_5.R)
+
+**Cálculo de área**
+[Aqui](../Exercicio5/questao_3.R)
+
+**Gerando valores nos intervalos**
+[Aqui](../Exercicio5/questao_4.R)
+
 ---
 
 ### Teoria dos Conjuntos
@@ -262,3 +276,6 @@ P(S|A) = 1
 0 <= P(A|B) <= 1
 P( (A união C)|B ) = P(A|B) + P(C|B), se A intersecção C = vazio
 ``` 
+
+**Exercícios Teóricos**
+[Aqui](../Exercicio4/exercicio4.md)
