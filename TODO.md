@@ -1,8 +1,8 @@
 ﻿- [ ] Exercicio1 - questao_1
-- [ ] Exercicio4
-- [ ] Exercicio5
+- [X] Exercicio4
+- [X] Exercicio5
 - [ ] Lista1
 
-- [ ] Ler material
+- [X] Ler material
 - [ ] Aprender plot
 - [ ] Pacman
