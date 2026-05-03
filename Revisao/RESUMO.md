@@ -223,3 +223,42 @@ Arranjo com repetição ou Permutação com reposição
 
 4. Com reposição e sem ordem
 Combinação completa (Combinação com repetição)
+
+---
+
+### Probabilidade Condicional
+
+Probabilidade condicional de um evento A, dado o evento B
+```
+P(A|B) = P(A intersecção B) / P(B)
+```
+sendo
+- P(B) > 0
+- P(A intersecção B) a probabilidade conjunto de A e B
+
+Nota: a ordem importa. Se fosse P(B|A), o denominador seria P(A)
+
+Isolando P(A intersecção B)
+```
+P(A intersecção B) = P(A|B) * P(B)
+P(A intersecção B) = P(A|B) * P(A)
+```
+
+**Regra de Bayes**
+Se A e B são 2 eventos em S
+```
+P(A|B) = ( P(B|A) * P(A) ) / P(B)
+```
+
+```
+P(A) = n(A) / n(S)
+P(B) = n(B) / n(S)
+```
+
+Propriedades
+```
+P(vazio|A) = 0
+P(S|A) = 1
+0 <= P(A|B) <= 1
+P( (A união C)|B ) = P(A|B) + P(C|B), se A intersecção C = vazio
+``` 
